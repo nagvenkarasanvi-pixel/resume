@@ -1,0 +1,293 @@
+/* =========================================
+   SANVI NAGVENKAR — RESUME STYLESHEET
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef1f5;
+  color: #263238;
+  line-height: 1.55;
+}
+
+/* =========================================
+   MAIN RESUME CONTAINER
+   ========================================= */
+
+.resume {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 30px auto;
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 32% 68%;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   LEFT SIDEBAR
+   ========================================= */
+
+.sidebar {
+  background: #243447;
+  color: #ffffff;
+  padding: 42px 28px;
+}
+
+.name {
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.profession {
+  color: #8fb8e8;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Sidebar Sections */
+
+.sidebar-section {
+  margin-top: 35px;
+}
+
+.sidebar-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* =========================================
+   CONTACT INFORMATION
+   ========================================= */
+
+.contact-item {
+  margin-bottom: 14px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.contact-label {
+  color: #9fc4ec;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+/* =========================================
+   SKILLS
+   ========================================= */
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: #91b9e7;
+  border-radius: 10px;
+}
+
+/* =========================================
+   STRENGTH TAGS
+   ========================================= */
+
+.tag {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  padding: 5px 9px;
+  margin: 4px 2px;
+  font-size: 11px;
+}
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+.content {
+  padding: 42px 42px 35px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #243447;
+  border-bottom: 2px solid #e1e6eb;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+/* =========================================
+   PROFESSIONAL SUMMARY
+   ========================================= */
+
+.summary {
+  color: #4d5965;
+  font-size: 13.5px;
+  text-align: justify;
+}
+
+/* =========================================
+   EDUCATION
+   ========================================= */
+
+.education-item h3 {
+  font-size: 17px;
+  color: #243447;
+  margin-bottom: 3px;
+}
+
+.education-meta {
+  color: #6d9ed8;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 7px;
+}
+
+.description {
+  font-size: 13px;
+  color: #56616b;
+}
+
+/* =========================================
+   CAREER OBJECTIVE
+   ========================================= */
+
+.objective {
+  background: #f5f8fb;
+  border-left: 4px solid #6d9ed8;
+  padding: 15px 17px;
+  font-size: 13px;
+  color: #4d5965;
+}
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #4d5965;
+}
+
+/* =========================================
+   CAREER FOCUS CARDS
+   ========================================= */
+
+.career-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.career-card {
+  background: #f7f9fb;
+  padding: 12px;
+  border: 1px solid #e4e8ec;
+  font-size: 12px;
+  color: #4d5965;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.career-card:hover {
+  transform: translateY(-2px);
+  border-color: #6d9ed8;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.footer {
+  margin-top: 30px;
+  font-size: 10px;
+  color: #8a949e;
+}
+
+/* =========================================
+   PRINT / PDF
+   ========================================= */
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .resume {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 850px) {
+
+  .resume {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar,
+  .content {
+    padding: 30px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+}
